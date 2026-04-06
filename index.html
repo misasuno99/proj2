@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ Copa do Mundo FIFA 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Efeito de confete -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading">
+        <div class="football-loader"></div>
+        <p>Carregando...</p>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">⚽ Copa 2026</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#paises">Países</a></li>
+                <li><a href="#momentos">Momentos</a></li>
+                <li><a href="#estadios">Estádios</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Copa do Mundo</span>
+                <span class="title-highlight">FIFA 2026</span>
+            </h1>
+            <p class="hero-subtitle">A maior festa do futebol mundial</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="48">0</span>
+                    <span class="stat-label">Países</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="104">0</span>
+                    <span class="stat-label">Jogos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="16">0</span>
+                    <span class="stat-label">Cidades</span>
+                </div>
+            </div>
+            <a href="#historia" class="cta-button">
+                <span>Explorar</span>
+                <div class="cta-arrow">↓</div>
+            </a>
+        </div>
+        <div class="hero-bg">
+            <div class="soccer-ball" id="heroBall">⚽</div>
+        </div>
+    </section>
+
+    <!-- Seção História -->
+    <section class="section historia" id="historia">
+        <div class="container">
+            <h2 class="section-title" data-animate="slide-up">
+                <span class="title-icon">🏆</span>
+                História da Copa
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-animate="slide-left">
+                    <div class="timeline-year">1930</div>
+                    <div class="timeline-content">
+                        <h3>Primeira Copa</h3>
+                        <p>Uruguai sediou e venceu a primeira Copa do Mundo, derrotando a Argentina na final.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="slide-right">
+                    <div class="timeline-year">1958</div>
+                    <div class="timeline-content">
+                        <h3>A Era Pelé</h3>
+                        <p>Pelé brilhou pela primeira vez, e o Brasil conquistou seu primeiro título mundial na Suécia.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="slide-left">
+                    <div class="timeline-year">1970</div>
+                    <div class="timeline-content">
+                        <h3>Tricampeonato</h3>
+                        <p>O Brasil se tornou tricampeão no México, ficando com a posse definitiva da Taça Jules Rimet.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="slide-right">
+                    <div class="timeline-year">1986</div>
+                    <div class="timeline-content">
+                        <h3>Maradona</h3>
+                        <p>Diego Maradona protagonizou dois dos gols mais icônicos na história do futebol.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="slide-left">
+                    <div class="timeline-year">2002</div>
+                    <div class="timeline-content">
+                        <h3>Brasil Pentacampeão</h3>
+                        <p>O Brasil conquistou seu quinto título na Copa da Coreia do Sul e Japão.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="slide-right">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h3>O Futuro Chegou</h3>
+                        <p>Pela primeira vez, 3 países sediam juntos: EUA, Canadá e México. 48 seleções participam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Países -->
+    <section class="section paises" id="paises">
+        <div class="container">
+            <h2 class="section-title" data-animate="slide-up">
+                <span class="title-icon">🌍</span>
+                Seleções Históricas
+            </h2>
+            <div class="cards-grid">
+                <div class="country-card" data-animate="scale-in" data-delay="0">
+                    <div class="country-flag brazil">🇧🇷</div>
+                    <h3>Brasil</h3>
+                    <p class="titles">5 títulos</p>
+                    <div class="country-stats">
+                        <span>⭐ 1958</span>
+                        <span>⭐ 1962</span>
+                        <span>⭐ 1970</span>
+                        <span>⭐ 1994</span>
+                        <span>⭐ 2002</span>
+                    </div>
+                </div>
+                <div class="country-card" data-animate="scale-in" data-delay="100">
+                    <div class="country-flag germany">🇩🇪</div>
+                    <h3>Alemanha</h3>
+                    <p class="titles">4 títulos</p>
+                    <div class="country-stats">
+                        <span>⭐ 1954</span>
+                        <span>⭐ 1974</span>
+                        <span>⭐ 1990</span>
+                        <span>⭐ 2014</span>
+                    </div>
+                </div>
+                <div class="country-card" data-animate="scale-in" data-delay="200">
+                    <div class="country-flag italy">🇮🇹</div>
+                    <h3>Itália</h3>
+                    <p class="titles">4 títulos</p>
+                    <div class="country-stats">
+                        <span>⭐ 1934</span>
+                        <span>⭐ 1938</span>
+                        <span>⭐ 1982</span>
+                        <span>⭐ 2006</span>
+                    </div>
+                </div>
+                <div class="country-card" data-animate="scale-in" data-delay="300">
+                    <div class="country-flag argentina">🇦🇷</div>
+                    <h3>Argentina</h3>
+                    <p class="titles">3 títulos</p>
+                    <div class="country-stats">
+                        <span>⭐ 1978</span>
+                        <span>⭐ 1986</span>
+                        <span>⭐ 2022</span>
+                    </div>
+                </div>
+                <div class="country-card" data-animate="scale-in" data-delay="400">
+                    <div class="country-flag france">🇫🇷</div>
+                    <h3>França</h3>
+                    <p class="titles">2 títulos</p>
+                    <div class="country-stats">
+                        <span>⭐ 1998</span>
+                        <span>⭐ 2018</span>
+                    </div>
+                </div>
+                <div class="country-card" data-animate="scale-in" data-delay="500">
+                    <div class="country-flag uruguay">🇺🇾</div>
+                    <h3>Uruguai</h3>
+                    <p class="titles">2 títulos</p>
+                    <div class="country-stats">
+                        <span>⭐ 1930</span>
+                        <span>⭐ 1950</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Momentos Memoráveis -->
+    <section class="section momentos" id="momentos">
+        <div class="container">
+            <h2 class="section-title" data-animate="slide-up">
+                <span class="title-icon">✨</span>
+                Momentos Memoráveis
+            </h2>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-item active" data-index="0">
+                        <div class="carousel-image" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+                            <div class="carousel-icon">🎯</div>
+                        </div>
+                        <div class="carousel-content">
+                            <h3>Mano de Dios - 1986</h3>
+                            <p>Maradona marcou dois gols inesquecíveis contra a Inglaterra, um com a mão e outro considerado o gol do século.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-index="1">
+                        <div class="carousel-image" style="background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);">
+                            <div class="carousel-icon">⚡</div>
+                        </div>
+                        <div class="carousel-content">
+                            <h3>Frango de Casillas - 2014</h3>
+                            <p>Espanha, campeã vigente, sofreu uma das maiores zebras ao ser eliminada na fase de grupos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-index="2">
+                        <div class="carousel-image" style="background: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);">
+                            <div class="carousel-icon">😢</div>
+                        </div>
+                        <div class="carousel-content">
+                            <h3>Maracanaço - 1950</h3>
+                            <p>Uruguai calou 200 mil brasileiros no Maracanã e venceu a Copa em plena casa do adversário.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-index="3">
+                        <div class="carousel-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                            <div class="carousel-icon">🏆</div>
+                        </div>
+                        <div class="carousel-content">
+                            <h3>Heptacampeonato Alemão - 2014</h3>
+                            <p>Alemanha aplicou 7x1 no Brasil no Mineirão, numa das partidas mais marcantes da história.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="prevBtn">←</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next-btn" id="nextBtn">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Estádios -->
+    <section class="section estadios" id="estadios">
+        <div class="container">
+            <h2 class="section-title" data-animate="slide-up">
+                <span class="title-icon">🏟️</span>
+                Estádios 2026
+            </h2>
+            <div class="stadiums-grid">
+                <div class="stadium-card" data-animate="flip-in" data-delay="0">
+                    <div class="stadium-icon">🏟️</div>
+                    <h3>MetLife Stadium</h3>
+                    <p class="stadium-location">📍 Nova Jersey, EUA</p>
+                    <p class="stadium-capacity">Capacidade: 82.500</p>
+                    <div class="stadium-badge">Final</div>
+                </div>
+                <div class="stadium-card" data-animate="flip-in" data-delay="100">
+                    <div class="stadium-icon">🏟️</div>
+                    <h3>AT&T Stadium</h3>
+                    <p class="stadium-location">📍 Arlington, EUA</p>
+                    <p class="stadium-capacity">Capacidade: 80.000</p>
+                    <div class="stadium-badge">Semifinal</div>
+                </div>
+                <div class="stadium-card" data-animate="flip-in" data-delay="200">
+                    <div class="stadium-icon">🏟️</div>
+                    <h3>SoFi Stadium</h3>
+                    <p class="stadium-location">📍 Los Angeles, EUA</p>
+                    <p class="stadium-capacity">Capacidade: 70.000</p>
+                    <div class="stadium-badge">Semifinal</div>
+                </div>
+                <div class="stadium-card" data-animate="flip-in" data-delay="300">
+                    <div class="stadium-icon">🏟️</div>
+                    <h3>Azteca Stadium</h3>
+                    <p class="stadium-location">📍 Cidade do México, México</p>
+                    <p class="stadium-capacity">Capacidade: 87.523</p>
+                    <div class="stadium-badge">Quartas</div>
+                </div>
+                <div class="stadium-card" data-animate="flip-in" data-delay="400">
+                    <div class="stadium-icon">🏟️</div>
+                    <h3>BMO Field</h3>
+                    <p class="stadium-location">📍 Toronto, Canadá</p>
+                    <p class="stadium-capacity">Capacidade: 45.000</p>
+                    <div class="stadium-badge">Oitavas</div>
+                </div>
+                <div class="stadium-card" data-animate="flip-in" data-delay="500">
+                    <div class="stadium-icon">🏟️</div>
+                    <h3>Hard Rock Stadium</h3>
+                    <p class="stadium-location">📍 Miami, EUA</p>
+                    <p class="stadium-capacity">Capacidade: 65.000</p>
+                    <div class="stadium-badge">Quartas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>⚽ Copa 2026</h3>
+                    <p>A maior festa do futebol mundial chega à América do Norte em 2026.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#historia">História</a></li>
+                        <li><a href="#paises">Países</a></li>
+                        <li><a href="#momentos">Momentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Países Sediadores</h3>
+                    <div class="hosts">
+                        <span>🇺🇸 EUA</span>
+                        <span>🇲🇽 México</span>
+                        <span>🇨🇦 Canadá</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Copa do Mundo FIFA. Site criado com ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
