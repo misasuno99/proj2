@@ -10,6 +10,5 @@ o que está escrito aqui
 ![](https://wallpapers.com/images/hd/anime-girl-profile-pictures-ri13vnr0adoq58sp.jpg)
 
 ## Menos é mais
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-3ONmy-T7MSBZzJQLLQniX1jvB5QumNS8w&s)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL4wNVZ_UmDsuxYRS60MPiHDNXkNpk1zYyQ&s)
 
-# Mais ainda assim é bom
